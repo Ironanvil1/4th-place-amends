@@ -1570,7 +1570,7 @@ The character suffers a -2 dice pool modifier to summon or bind spirits. If the 
 		<quality>
 			<id>50aed18d-7b56-4849-95ae-c2217101b476</id>
 			<name>Stubby Legs</name>
-			<karma>4</karma>
+			<karma>-4</karma>
 			<category>Negative</category>
 			<metagenic>True</metagenic>
 			<source>4PR</source>
