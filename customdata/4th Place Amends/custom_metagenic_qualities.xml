@@ -1431,7 +1431,7 @@ The character leaves slime wherever they go. Not a lot, but just enough to be no
 		<quality>
 			<id>00fec4ec-5684-48ab-8f20-c00fce82ef19</id>
 			<name>Brachycephalic Syndrome</name>
-			<karma>4</karma>
+			<karma>-4</karma>
 			<category>Negative</category>
 			<metagenic>True</metagenic>
 			<source>4PR</source>
