@@ -212,27 +212,10 @@
 			<forcegrade>None</forcegrade>
 			<isgeneware />
 			<bonus>
-				<specificattribute>
-					<name>AGI</name>
-					<val>1</val>
-				</specificattribute>
-				<specificattribute>
-					<name>REA</name>
-					<val>1</val>
-				</specificattribute>
-				<specificskill>
-					<name>Gymnastics</name>
-					<bonus>2</bonus>
-				</specificskill>
+				<addqualities>
+					<addquality>Catlike Reflexes</addquality>
+				</addqualities>
 			</bonus>
-			<forbidden>
-				<oneof>
-					<bioware>Synaptic Booster</bioware>
-					<cyberware>Wired Reflexes</cyberware>
-					<cyberware>Reaction Enhancers</cyberware>
-					<cyberware>Move-by-Wire System</cyberware>
-				</oneof>
-			</forbidden>
 			<notes>Manually add the relevant metagenetic negative quality by taking one of the SURGE qualities for free, adding the negative quality, and then removing the SURGE quality.</notes>
 			<forcegrade>None</forcegrade>
 			<source>4PR</source>
@@ -889,7 +872,7 @@
 			</bannedgrades>
 			<ess>Rating * 0.15</ess>
 			<capacity>0</capacity>
-			<avail>18</avail>
+			<avail>Rating * 6</avail>
 			<cost>Rating * 25000</cost>
 			<bonus>
         		<disablequality>e96c7280-b9b0-4112-8b65-a3568c7ca13e</disablequality>
@@ -944,5 +927,74 @@
 			<source>4PR</source>
 			<page>0</page>
 		</bioware>
+		<bioware>
+			<id>df569b80-7d91-4f3e-9bba-3ee2537a2ce3</id>
+			<name>Neural Hardening</name>
+			<category>Cultured</category>
+			<bannedgrades>
+				<grade>Used</grade>
+				<grade>Used (Adapsin)</grade>
+			</bannedgrades>
+			<ess>Rating * 0.1</ess>
+			<capacity>0</capacity>
+			<avail>Rating * 6</avail>
+			<cost>Rating *20000</cost>
+			<bonus>
+				<conditionmonitor>
+				  <stun>Rating</stun>
+				</conditionmonitor>
+			</bonus>
+			 <rating>2</rating>
+			<source>4PR</source>
+			<page>1</page>
+			<notes></notes>
+		</bioware>
+    <bioware>
+      <id>dc49f6ab-1e5d-404b-9fbd-76b6d3a83d34</id>
+      <name>Spacer Gland</name>
+      <category>Orthoskin Upgrades</category>
+      <ess>0.2</ess>
+      <capacity>0</capacity>
+      <avail>12</avail>
+      <cost>18000</cost>
+      <required>
+        <oneof>
+          <bioware>Orthoskin</bioware>
+        </oneof>
+	   <bonus>
+        <radiationresist>2</radiationresist>
+      </bonus>
+      </required>
+      <source>4PR</source>
+      <page>1</page>
+    </bioware>
+	<!-- BTL ADDITIONS -->
+	<bioware>
+      <id>92a60ca4-7e2b-57ca-ac02-1d58e4932d0a</id>
+      <name>Resilient Engrams</name>
+      <category>Exotic Metagenetics</category>
+      <ess>0.2</ess>
+      <capacity>0</capacity>
+      <avail>12F</avail>
+      <cost>16420</cost>
+      <bonus>
+	  	<drugpositiveattributemodifier category="BTLs">1</drugpositiveattributemodifier>
+        <physiologicaladdictionfirsttime>-2</physiologicaladdictionfirsttime>
+        <psychologicaladdictionfirsttime>-2</psychologicaladdictionfirsttime>
+        <physiologicaladdictionalreadyaddicted>2</physiologicaladdictionalreadyaddicted>
+        <psychologicaladdictionalreadyaddicted>2</psychologicaladdictionalreadyaddicted>
+      </bonus>
+      <forcegrade>None</forcegrade>
+      <isgeneware/>
+      <source>4PR</source>
+      <page>1</page>
+	  <notes>
+		This is a set of several minor modifications that have the collective effect of modifying the way your brain processes simsense inputs. Similar to the Narco treatment, a study of survivors of heavy BTL abuse identified cerebral commonalities that seemed to make them less susceptible to suffering mental damage. 
+		While you become no less likely to become addicted to simsense chips, you experience greater positive effects from them, and more easily tolerated negatives. 
+		On Addiction Tests, take a –2 dice pool modifier when you aren’t addicted to the chip you’re rolling for, and a +2 dice pool modifier when you are addicted to the chip.
+		Any BTL that grants a positive attribute modifier as an effect increases that modifier by +1. For any chip that inflicts a negative quality, the user receives +1DP to resist the compulsion.
+		In addition, if the user possesses Skillwires, any physical skills granted by a chip are increased by +1, as the residual halo effect of the recorded skill is picked up via the Skillwires, letting the user get more from the chip. 
+	  </notes>
+	</bioware>
 	</biowares>
 </chummer>
