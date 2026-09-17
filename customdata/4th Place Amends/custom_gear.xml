@@ -22,9 +22,61 @@
 		<category>Future Tech</category>
 		<category blackmarket="Ammunition">Ammunition (Hand Load)</category>
 		<category>Programmable ASIST Biofeedback</category>
+		<category>Grenade Mods</category>
+		<category blackmarket="BTLs">BTL Grades</category>
 	</categories>
 	<gears>
 		<!-- More Ammo Stuff -->
+		<gear>
+			<id>0068339e-f020-499f-846f-9eaeb92080b9</id>
+			<name>Ammo: Deathdealer</name>
+			<category>Ammunition</category>
+			<rating>0</rating>
+			<source>4PR</source>
+			<page>1</page>
+			<avail>16F</avail>
+			<cost>450</cost>
+			<costfor>10</costfor>
+			<weaponbonus>
+				<accuracy>1</accuracy>
+				<smartlinkpool>2</smartlinkpool>
+			</weaponbonus>
+			<ammoforweapontype>gun</ammoforweapontype>
+			<notes>Doubles called shot penalties. Hits on ties.</notes>
+		</gear>
+		<gear>
+			<id>5f33ba97-c18d-4000-bed9-c6840ca58514</id>
+			<name>Ammo: Suppression</name>
+			<category>Ammunition</category>
+			<rating>0</rating>
+			<source>4PR</source>
+			<page>1</page>
+			<avail>4R</avail>
+			<cost>40</cost>
+			<costfor>10</costfor>
+			<weaponbonus>
+				<ap>1</ap>
+			</weaponbonus>
+			<ammoforweapontype>gun</ammoforweapontype>
+			<notes>Increases suppression penalty by 1.</notes>
+		</gear>
+		<gear>
+			<id>0c1b5d49-763f-4e48-8265-92b401e6bb32</id>
+			<name>Ammo: Shock Lock Slugs</name>
+			<category>Ammunition</category>
+			<rating>0</rating>
+			<source>RG</source>
+			<page>55</page>
+			<avail>14R</avail>
+			<cost>175</cost>
+			<costfor>10</costfor>
+			<weaponbonus>
+				<ap>1</ap>
+        		<damage>2</damage>
+			</weaponbonus>
+			<ammoforweapontype>gun</ammoforweapontype>
+			<notes>Shotgun only. -5 AP against barriers, does not count as a penetration weapon for shooting through barriers.</notes>
+		</gear>
 		<gear>
 			<id>16fa6da3-c9b6-4d8c-9cdf-1a8f58d305f1</id>
 			<name>Ammo: Gyrojet</name>
@@ -204,9 +256,347 @@
 			<avail>20F</avail>
 			<cost>160</cost>
 			<costfor>10</costfor>
-			<ammoforweapontype>hipower</ammoforweapontype>
+			<ammoforweapontype>typhoon</ammoforweapontype>
 		</gear>
-		<!-- More Minigrenades -->
+		<gear>
+			<id>e9f6e7cb-73fa-4c2f-b3de-d0ef52367fca</id>
+			<name>Ammo: Typhoon</name>
+			<category>Ammunition</category>
+			<rating>0</rating>
+			<source>4PR</source>
+			<page>1</page>
+			<avail>12F</avail>
+			<cost>500</cost>
+			<ammoforweapontype>typhoon</ammoforweapontype>
+		</gear>
+		<!-- Rockets and Missiles -->
+		<gear>
+			<id>7b5e3016-0a4f-4072-9062-520f7869c34d</id>
+			<name>Rocket: Chemical</name>
+			<category>Ammunition</category>
+			<rating>0</rating>
+			<source>4PR</source>
+			<page>1</page>
+			<avail>18F</avail>
+			<weaponbonus>
+				<damagereplace>Chemical (10m Radius)</damagereplace>
+			</weaponbonus>
+			<cost>2000</cost>
+			<addoncategory>Drugs</addoncategory>
+			<addoncategory>Toxins</addoncategory>
+			<addoncategory>Custom</addoncategory>
+			<ammoforweapontype noextra="True">mlauncher</ammoforweapontype>
+		</gear>
+		<gear>
+			<id>ec7ef740-9e24-498c-8721-9d08691898a7</id>
+			<name>Rocket: Cluster</name>
+			<category>Ammunition</category>
+			<rating>0</rating>
+			<source>4PR</source>
+			<page>1</page>
+			<avail>21F</avail>
+			<weaponbonus>
+				<apreplace>-2</apreplace>
+				<damagereplace>18P (20m Radius)</damagereplace>
+			</weaponbonus>
+			<cost>2500</cost>
+			<ammoforweapontype noextra="True">mlauncher</ammoforweapontype>
+			<notes>inflicts a -4 suppression penalty on targets within the radius for the pass. Net hits don't add to damage.</notes> 
+		</gear>
+		<gear>
+			<id>977e001e-96bc-4a85-b1af-0bbd742c088a</id>
+			<name>Rocket: Fuel-Air Explosive</name>
+			<category>Ammunition</category>
+			<rating>0</rating>
+			<source>4PR</source>
+			<page>1</page>
+			<avail>18F</avail>
+			<weaponbonus>
+				<apreplace>-0</apreplace>
+				<damagereplace>16P (10m Radius)</damagereplace>
+			</weaponbonus>
+			<cost>3000</cost>
+			<ammoforweapontype noextra="True">mlauncher</ammoforweapontype>
+			<notes>Sets targets on fire (fire resistance doesn't add to soak). Net hits don't add to damage. Halve non-hardened metahuman/critter armor.</notes>
+		</gear>
+		<gear>
+			<id>9843fb01-51a1-489b-9450-94d9002029e3</id>
+			<name>Rocket: HEX-P</name>
+			<category>Ammunition</category>
+			<rating>0</rating>
+			<source>4PR</source>
+			<page>1</page>
+			<avail>18F</avail>
+			<weaponbonus>
+				<apreplace>-2</apreplace>
+				<damagereplace>14P</damagereplace>
+			</weaponbonus>
+			<cost>2500</cost>
+			<ammoforweapontype noextra="True">mlauncher</ammoforweapontype>
+			<notes>Also generates an 18P/-2 (-2/m blast) explosion. If it explodes inside a vehicle, the vehicle armor is ignored.</notes>
+		</gear>
+		<gear>
+			<id>723e1495-e960-45a0-b110-78157ba8d10b</id>
+			<name>Rocket: Inferno</name>
+			<category>Ammunition</category>
+			<rating>0</rating>
+			<source>4PR</source>
+			<page>1</page>
+			<avail>18F</avail>
+			<weaponbonus>
+				<apreplace>-6</apreplace>
+				<damagereplace>18P (12m Radius)</damagereplace>
+			</weaponbonus>
+			<cost>2500</cost>
+			<ammoforweapontype noextra="True">mlauncher</ammoforweapontype>
+			<notes>Fire damage. -4 to put out fire, cannot be put out with water.</notes>
+		</gear>
+		<gear>
+			<id>9f881ee4-d433-4702-bc8b-4deb0a015755</id>
+			<name>Rocket: Jabberwocky</name>
+			<category>Ammunition</category>
+			<rating>20</rating>
+			<source>4PR</source>
+			<page>1</page>
+			<avail>(Rating + 12)F</avail>
+			<addweapon>Rocket: Jabberwocky</addweapon>
+			<cost>(Rating * 150) + 2000</cost>
+			<ammoforweapontype noextra="True">mlauncher</ammoforweapontype>
+			<notes>Acts as a Jammer of its Rating. If a missile, add a Custom item to represent its Sensor rating.</notes>
+		</gear>
+		<gear>
+			<id>e9bf54a8-43ac-4744-adf1-520d857eb537</id>
+			<name>Rocket: Kinetic</name>
+			<category>Ammunition</category>
+			<rating>0</rating>
+			<source>4PR</source>
+			<page>1</page>
+			<avail>12F</avail>
+			<weaponbonus>
+				<apreplace>-10</apreplace>
+				<damagereplace>20P</damagereplace>
+			</weaponbonus>
+			<cost>2000</cost>
+			<ammoforweapontype noextra="True">mlauncher</ammoforweapontype>
+			<notes>No blast, immune to anti-missile defenses.</notes>
+		</gear>
+		<gear>
+			<id>f871b613-a4a4-4be5-963a-7a2333c8c51d</id>
+			<name>Rocket: Zapper</name>
+			<category>Ammunition</category>
+			<rating>0</rating>
+			<source>4PR</source>
+			<page>1</page>
+			<avail>10F</avail>
+			<weaponbonus>
+				<apreplace>-5</apreplace>
+				<damagereplace>18S(e) (-4/m)</damagereplace>
+			</weaponbonus>
+			<cost>2000</cost>
+			<ammoforweapontype noextra="True">mlauncher</ammoforweapontype>
+			<notes>No blast, immune to anti-missile defenses.</notes>
+		</gear>
+		<gear>
+			<id>6e3801ed-a3bf-4847-a41b-b9093b581920</id>
+			<name>Missile: Chemical</name>
+			<category>Ammunition</category>
+			<rating>6</rating>
+			<source>4PR</source>
+			<page>1</page>
+			<avail>18F</avail>
+			<weaponbonus>
+				<damagereplace>Chemical (10m Radius)</damagereplace>
+			</weaponbonus>
+			<cost>2000 + (Rating * 500)</cost>
+			<addoncategory>Drugs</addoncategory>
+			<addoncategory>Toxins</addoncategory>
+			<addoncategory>Custom</addoncategory>
+			<ammoforweapontype noextra="True">mlauncher</ammoforweapontype>
+		</gear>
+		<gear>
+			<id>b7913c5e-fa2b-4e1d-b4b5-a04c4a9edfb3</id>
+			<name>Missile: Cluster</name>
+			<category>Ammunition</category>
+			<rating>6</rating>
+			<source>4PR</source>
+			<page>1</page>
+			<avail>21F</avail>
+			<weaponbonus>
+				<apreplace>-2</apreplace>
+				<damagereplace>18P (20m Radius)</damagereplace>
+			</weaponbonus>
+			<cost>2500 + (Rating * 500)</cost>
+			<ammoforweapontype noextra="True">mlauncher</ammoforweapontype>
+			<notes>inflicts a -4 suppression penalty on targets within the radius for the pass. Net hits don't add to damage.</notes> 
+		</gear>
+		<gear>
+			<id>f65ace0d-d2ff-4493-afd4-2de01d11f75c</id>
+			<name>Missile: Fuel-Air Explosive</name>
+			<category>Ammunition</category>
+			<rating>6</rating>
+			<source>4PR</source>
+			<page>1</page>
+			<avail>18F</avail>
+			<weaponbonus>
+				<apreplace>-0</apreplace>
+				<damagereplace>16P (10m Radius)</damagereplace>
+			</weaponbonus>
+			<cost>3000 + (Rating * 500)</cost>
+			<ammoforweapontype noextra="True">mlauncher</ammoforweapontype>
+			<notes>Sets targets on fire (fire resistance doesn't add to soak). Net hits don't add to damage. Halve non-hardened metahuman/critter armor.</notes>
+		</gear>
+		<gear>
+			<id>d0ed3f75-d83d-476a-81f4-15ecdb2459e2</id>
+			<name>Missile: HEX-P</name>
+			<category>Ammunition</category>
+			<rating>6</rating>
+			<source>4PR</source>
+			<page>1</page>
+			<avail>18F</avail>
+			<weaponbonus>
+				<apreplace>-2</apreplace>
+				<damagereplace>14P</damagereplace>
+			</weaponbonus>
+			<cost>2500 + (Rating * 500)</cost>
+			<ammoforweapontype noextra="True">mlauncher</ammoforweapontype>
+			<notes>Also generates an 18P/-2 (-2/m blast) explosion. If it explodes inside a vehicle, the vehicle armor is ignored.</notes>
+		</gear>
+		<gear>
+			<id>5d7eb224-003d-44f7-a9a3-b66f8efd80a6</id>
+			<name>Missile: Inferno</name>
+			<category>Ammunition</category>
+			<rating>6</rating>
+			<source>4PR</source>
+			<page>1</page>
+			<avail>18F</avail>
+			<weaponbonus>
+				<apreplace>-6</apreplace>
+				<damagereplace>18P (12m Radius)</damagereplace>
+			</weaponbonus>
+			<cost>2500 + (Rating * 500)</cost>
+			<ammoforweapontype noextra="True">mlauncher</ammoforweapontype>
+			<notes>Fire damage. -4 to put out fire, cannot be put out with water.</notes>
+		</gear>
+		<gear>
+			<id>d4813197-32d0-4568-a034-d313469ee5f3</id>
+			<name>Missile: Kinetic</name>
+			<category>Ammunition</category>
+			<rating>6</rating>
+			<source>4PR</source>
+			<page>1</page>
+			<avail>12F</avail>
+			<weaponbonus>
+				<apreplace>-10</apreplace>
+				<damagereplace>20P</damagereplace>
+			</weaponbonus>
+			<cost>2000 + (Rating * 500)</cost>
+			<ammoforweapontype noextra="True">mlauncher</ammoforweapontype>
+			<notes>No blast, immune to anti-missile defenses.</notes>
+		</gear>
+		<gear>
+			<id>6c54910f-ca0c-4c4b-a9ab-aa2ddaa751c3</id>
+			<name>Missile: Zapper</name>
+			<category>Ammunition</category>
+			<rating>6</rating>
+			<source>4PR</source>
+			<page>1</page>
+			<avail>10F</avail>
+			<weaponbonus>
+				<apreplace>-5</apreplace>
+				<damagereplace>18S(e) (-4/m)</damagereplace>
+			</weaponbonus>
+			<cost>2000 + (Rating * 500)</cost>
+			<ammoforweapontype noextra="True">mlauncher</ammoforweapontype>
+			<notes>No blast, immune to anti-missile defenses.</notes>
+		</gear>
+		<!-- More Grenades and Minigrenades -->
+		<gear>
+		<id>ef4ff185-a6b3-4a2b-84c5-4f627a923fc8</id>
+		<name>Gecko Grenade</name>
+		<category>Grenade Mods</category>
+		<rating>0</rating>
+		<source>4PR</source>
+		<page>1</page>
+		<avail>+2</avail>
+		<cost>+100</cost>
+		<required>
+			<geardetails>
+			<name operation="contains">Grenade</name>
+			</geardetails>
+		</required>
+		</gear>
+        <gear>
+          <id>1c1cf32c-0f9c-475a-b432-f4abe3d508b9</id>
+          <name>Grenade: Grey Mana</name>
+          <category>Ammunition</category>
+          <rating>0</rating>
+          <source>4PR</source>
+          <page>1</page>
+          <avail>14F</avail>
+          <addweapon>Grenade: Grey Mana</addweapon>
+          <cost>500</cost>
+          <costfor>1</costfor>
+        </gear>
+        <gear>
+          <id>3946b3d3-0c94-450f-998b-93809251e4c2</id>
+          <name>Grenade: Cluster</name>
+          <category>Ammunition</category>
+          <rating>0</rating>
+          <source>4PR</source>
+          <page>1</page>
+          <avail>12F</avail>
+          <addweapon>Grenade: Cluster</addweapon>
+          <cost>100</cost>
+          <costfor>1</costfor>
+        </gear>
+        <gear>
+          <id>22b743fa-9ccc-45fc-ac77-cbba543428c4</id>
+          <name>Grenade: Monofilament</name>
+          <category>Ammunition</category>
+          <rating>0</rating>
+          <source>4PR</source>
+          <page>1</page>
+          <avail>12F</avail>
+          <addweapon>Grenade: Monofilament</addweapon>
+          <cost>100</cost>
+          <costfor>1</costfor>
+        </gear>
+        <gear>
+          <id>cd751d16-eb8d-4006-bc85-fcc2844ee9a8</id>
+          <name>Grenade: HEDP</name>
+          <category>Ammunition</category>
+          <rating>0</rating>
+          <source>4PR</source>
+          <page>1</page>
+          <avail>12F</avail>
+          <addweapon>Grenade: HEDP</addweapon>
+          <cost>175</cost>
+          <costfor>1</costfor>
+        </gear>
+        <gear>
+          <id>8e73a2b0-e2cb-49c5-8027-92ab77585f08</id>
+          <name>Minigrenade: Cluster</name>
+          <category>Ammunition</category>
+          <rating>0</rating>
+          <source>4PR</source>
+          <page>1</page>
+          <avail>12F</avail>
+          <addweapon>Minigrenade: Cluster</addweapon>
+          <cost>100</cost>
+      	  <ammoforweapontype noextra="True">glauncher</ammoforweapontype>
+        </gear>
+        <gear>
+          <id>eff83e96-0e13-409f-8cc0-508ebe88c142</id>
+          <name>Minigrenade: Monofilament</name>
+          <category>Ammunition</category>
+          <rating>0</rating>
+          <source>4PR</source>
+          <page>1</page>
+          <avail>12F</avail>
+          <addweapon>Minigrenade: Monofilament</addweapon>
+          <cost>100</cost>
+      	  <ammoforweapontype noextra="True">glauncher</ammoforweapontype>
+        </gear>
 		<gear>
 			<id>8e2e57cd-cfbb-4cc3-9d01-11e3edc0dbc1</id>
 			<name>Minigrenade: Paint</name>
@@ -317,6 +707,18 @@
 			<cost>125</cost>
 			<ammoforweapontype noextra="True">glauncher</ammoforweapontype>
 		</gear>
+        <gear>
+          <id>1e25d338-90ef-46e8-b342-1603f750f8e2</id>
+          <name>Minigrenade: HEDP</name>
+          <category>Ammunition</category>
+          <rating>0</rating>
+          <source>4PR</source>
+          <page>1</page>
+          <avail>12F</avail>
+          <addweapon>Minigrenade: HEDP</addweapon>
+          <cost>175</cost>
+      	  <ammoforweapontype noextra="True">glauncher</ammoforweapontype>
+        </gear>
 		<!-- Misc Gear -->
 		<gear>
 			<id>c699d503-e181-4d51-b060-0f9cd9f0e735</id>
@@ -953,6 +1355,81 @@
 			</gears>
 		</gear>
 		<gear>
+		<id>5ada8c0f-113e-49d0-9a1b-1a99454639e6</id>
+		<name>MCT Tachi</name>
+		<category>Commlinks</category>
+		<rating>0</rating>
+		<source>4PR</source>
+		<page>1</page>
+		<avail>0</avail>
+		<capacity>0</capacity>
+		<cost>0</cost>
+		<devicerating>7</devicerating>
+		<dataprocessing>7</dataprocessing>
+		<firewall>7</firewall>
+		<canformpersona>Self</canformpersona>
+		<gears>
+			<usegear>
+				<name>Agent</name>
+				<category>Software</category>
+				<rating>4</rating>
+			</usegear>
+			<usegear>
+				<name>Commlink Functionality</name>
+				<category>Electronics Accessories</category>
+			</usegear>
+			<usegear>
+				<name>XM-629 Targeting Autosoft</name>
+				<category>Autosofts</category>
+				<rating>4</rating>
+			</usegear>
+		</gears>
+      	<hide />
+		</gear>
+		<gear>
+		<id>70956ee0-c3fb-4af9-9014-638f948c07e0</id>
+		<name>Shiawase Fatal Light</name>
+		<category>Commlinks</category>
+		<rating>0</rating>
+		<source>4PR</source>
+		<page>1</page>
+		<avail>0</avail>
+		<capacity>0</capacity>
+		<cost>0</cost>
+		<devicerating>7</devicerating>
+      	<sleaze>6</sleaze>
+		<dataprocessing>7</dataprocessing>
+		<firewall>7</firewall>
+		<canformpersona>Self</canformpersona>
+		<gears>
+			<usegear>
+				<name>Commlink Functionality</name>
+				<category>Electronics Accessories</category>
+			</usegear>
+			<usegear>
+				<name>Commlink Functionality</name>
+				<category>Electronics Accessories</category>
+			</usegear>
+			<usegear>
+				<name>Satellite Link</name>
+				<category>Electronics Accessories</category>
+				<rating>4</rating>
+			</usegear>
+		</gears>
+      	<hide />
+		</gear>
+		<gear>
+			<id>9f73370d-c255-4c3c-9e25-e6e968bb9860</id>
+			<name>XM-629 Targeting Autosoft</name>
+			<category>Autosofts</category>
+			<rating>6</rating>
+			<source>SR5</source>
+			<page>270</page>
+			<avail>0</avail>
+			<cost>0</cost>
+			<hide />
+		</gear>
+		<gear>
 			<id>03864845-6170-434f-b6a2-690d0aeeb5a2</id>
 			<name>Black Tide</name>
 			<category>Drugs</category>
@@ -963,9 +1440,27 @@
 			<page>1</page>
 			<avail>12F</avail>
 			<cost>3000</cost>
+			<wirelessbonus>	
+				<specificattribute>
+					<name>BOD</name>
+					<val>1</val>
+				</specificattribute>
+				<specificattribute>
+					<name>WIL</name>
+					<val>1</val>
+				</specificattribute>
+				<specificattribute>
+					<name>AGL</name>
+					<val>1</val>
+				</specificattribute>
+				<initiativepass>2</initiativepass>
+				<addqualities>
+				<addquality>High Pain Tolerance 3</addquality>
+				</addqualities>
+			</wirelessbonus>
 			<notes>Addiction Rating 11, Threshold 4 (Both), Injection Vector. +1 BOD/AGI/WIL, +2d6 Init, High Pain Tolerance 3 for duration.</notes>
 		</gear>
-		<gear>
+		<drug>
 			<id>0f8fae53-5bce-4102-a362-6f88735c8647</id>
 			<name>Eel</name>
 			<category>Drugs</category>
@@ -977,22 +1472,14 @@
 			<avail>16F</avail>
 			<cost>900</cost>
 			<ammoforweapontype noextra="True">spraypen</ammoforweapontype>
+			<bonus>
+			<specificattribute>
+				<name>INT</name>
+				<val>3</val>
+			</specificattribute>
+			</bonus>
 			<notes>Addiction Rating 11, Threshold 3 (Both), Injection + Inhalation Vector. -3 STR, +4 REA, +3 INT, +1 WIL for duration.</notes>
-		</gear>
-		<gear>
-			<id>ef2a767f-1616-4723-aca7-12618bc7e76b</id>
-			<name>Eel</name>
-			<category>Drugs</category>
-			<addoncategory>Drug Grades</addoncategory>
-			<addoncategory>Custom</addoncategory>
-			<rating>0</rating>
-			<source>4PR</source>
-			<page>1</page>
-			<avail>16F</avail>
-			<cost>900</cost>
-			<ammoforweapontype noextra="True">spraypen</ammoforweapontype>
-			<notes>Addiction Rating 11, Threshold 3 (Both), Injection + Inhalation Vector. -3 STR, +4 REA, +3 INT, +1 WIL for duration.</notes>
-		</gear>
+		</drug>
 		<gear>
 			<id>30b25115-7817-4d05-b4bd-730a259764b5</id>
 			<name>Grey's Resistor</name>
@@ -1044,26 +1531,16 @@
 			<notes>Power 11. Inhalation + Injection. Unresisted Power is added to Drain (no more than double drain).</notes>
 		</gear>
 		<gear>
-			<id>32c56e1e-7395-40f3-9fb8-b51593ee0fa7</id>
-			<name>God Chip BTL</name>
-			<category>BTLs</category>
-			<rating>0</rating>
-			<source>4PR</source>
-			<page>1</page>
-			<avail>15F</avail>
-			<cost>1250</cost>
-			<notes>+1 to all physical attributes, -2 WIL.</notes>
+		  <id>40723763-5989-4d3f-9dde-610cfbcb57f0</id>
+		  <name>Shadow Cloak</name>
+		  <category>Foci</category>
+		  <ratinglabel>String_Force</ratinglabel>
+		  <rating>6</rating>
+		  <source>SR5</source>
+		  <page>320</page>
+		  <avail>(Rating * 4)R</avail>
+		  <cost>Rating * 3000</cost>
 		</gear>
-		<gear>
-			<id>a1d06d92-2431-4a81-aa5d-ce2ca6b57f07</id>
-			<name>Vulcan BTL</name>
-			<category>BTLs</category>
-			<rating>0</rating>
-			<source>4PR</source>
-			<page>1</page>
-			<avail>8R</avail>
-			<cost>300</cost>
-			<notes>+1 LOG/WIL, -1 CHA/INT.</notes>
-		</gear>
+    <!-- End Region -->
 	</gears>
 </chummer>
