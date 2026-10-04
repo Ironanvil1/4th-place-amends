@@ -77,6 +77,27 @@
 		 If someone tries to slot a Tailored chip intended for some-one other than themselves, treat it as Bootleg.
 		</notes>
     </grade>
+	<grade>
+      <id>0166e122-5174-4f79-a033-67a65cf77903</id>
+      <name>Perpetual</name>
+      <category>BTL Grades</category>
+      <rating>0</rating>
+      <source>4PR</source>
+      <page>1</page>
+      <avail>0</avail>
+      <capacity>0</capacity>
+      <requireparent />
+      <cost>Parent Cost * 10</cost>
+		<required>
+        <geardetails>
+        <category>BTLs</category>
+        </geardetails>
+		</required>
+		<notes>
+		A chip on a more durable substrate, and which will better preserve the programming for long term replay.  They cost ten times the normal price (on top of quality grade) and add +2 to Avail.
+		Jailbreaking a non Perpetual BTL results in it becoming Bootleg quality
+		</notes>
+    </grade>
 	</grades>
   <drugs>
 	<!-- NEW CUSTOM BTL CHIPS -->
