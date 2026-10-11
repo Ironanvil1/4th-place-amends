@@ -2838,6 +2838,9 @@
         <accessory>
           <name>Imaging Scope</name>
         </accessory>
+		<accessory>
+          <name>Airburst Link</name>
+        </accessory>
       </accessories>
       <accessorymounts>
         <mount>Stock</mount>
